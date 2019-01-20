@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML lang="ja">
+
+<HEAD>
+
+<TITLE>履修申請</TITLE>
+
+<!-- mod 2014/07/14 2014_Web履修システム移行 KnownProblem_17 start
+<meta http-equiv=Content-Type content="text/html; charset=EUC-JP"> -->
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<!-- mod 2014/07/14 2014_Web履修システム移行 KnownProblem_17 end -->
+
+<meta http-equiv="content-Script-Type" content="text/javascript">
+
+<meta http-equiv="content-Style-Type" content="text/css">
+
+<meta http-equiv="Pragma" content="no-cache">
+
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<meta http-equiv="Expires" content="-1">
+
+<meta name="robots" content="noindex,nofollow">
+<!-- mod 2014/07/14 2014_Web履修システム移行 KnownProblem_18 start -->
+<style type="text/css">
+<!--
+* { font:"MS PGothic", "Osaka", Arial, sans-serif; font-family:"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3"; };
+textarea { font-family:'ＭＳ ゴシック', 'MS Gothic', 'Osaka－等幅', Osaka-mono, monospace;};
+-->
+</style>
+<!-- mod 2014/07/14 2014_Web履修システム移行 KnownProblem_18 end -->
+
+<LINK href="style.css" type="text/css" rel="StyleSheet">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	var eflag = 0;
+	function check() {
+		if (eflag == 0) {
+			eflag = 1;
+		} else {
+			alert("ただいま処理中です。\nOKボタンを押して、画面が表示されるまでしばらくお待ちください。");
+			return false;
+		}
+	}
+
+	function reset_err(){
+		if (eflag == 1){
+		    eflag = 0;
+		}
+	}
+	setInterval("reset_err()",60000);
+
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY leftMargin="0" topMargin="0" Marginwidth="0" Marginheight="0" class="basecolor">
+
+<TABLE cellSpacing="0" width="100%" border="0" class="basecolor">
+
+  <TBODY>
+
+  <TR height="20">
+
+	<td class="header" width="70%">&nbsp;&nbsp;早稲田大学事務サービス
+	</td>
+
+  </TR>
+
+  </TBODY>
+
+</TABLE>
+
+<TABLE cellSpacing="0" width="100%" border="0" class="basecolor">
+
+  <TBODY>
+
+  <TR>
+
+    <TD class="welcome" >&nbsp;&nbsp;Welcomeback&nbsp;ミツノ　シン&nbsp;さん 
+
+    </TD>
+
+	<td class="welcome" style="text-align: right" width="15%">&nbsp;&nbsp;
+
+	<INPUT TYPE="SUBMIT"  class="buttonbig" VALUE="閉じる" onClick="Javaxcript:window.close()">
+
+    </TD>  
+
+  </TR>
+
+  </TBODY>
+
+</TALE>
+
+<TABLE cellSpacing="0" width="100%" border="0" class="basecolor">
+
+  <TBODY>
+
+  <TR height="20">
+
+    <TD class="navibar" width="70%">
+
+&nbsp;&nbsp;Student Service
+    </TD>
+
+	<td class="navibar" width="30%" style="text-align: right">&nbsp;
+
+	</td>
+
+  </TR>
+
+  </TBODY>
+
+</TABLE>
+
+<BR>
+
+
+<!-- 5 -->
+<TABLE class=basecolor cellSpacing=0 cellPadding=0 width="99%" border=0><TBODY>
+  <TR valign="top">
+<!-- 登録ブロック --><!-- ------------------------------------------------ --><!-- infomation -->
+<TD>
+<!-- 15 -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY>
+  <TR><TD>
+<!-- 16 -->
+    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY>
+		<FORM METHOD="POST" ACTION="/kyomu/epb1110.htm" onSubmit="return check()">
+      <TR>
+        <TD><SPAN class="VARTICAL-ALIGN: middle;font-size:12px">
+      		97171124      		&nbsp;&nbsp;
+      		ミツノ　シン&nbsp;さんの履修登録です。
+      	</SPAN></TD>
+        <TD>
+			2018-04-29 22:17:31        </TD>
+			<TD align=right>
+				<INPUT TYPE="HIDDEN" NAME="HID_P3" VALUE="">
+				<INPUT TYPE="HIDDEN" NAME="PHPSESSID" VALUE="u43u7k2cuuc5va2abff6ttjsg2">
+				<INPUT TYPE="HIDDEN" NAME="hidden_counter" VALUE="1">
+							</TD>
+      </TR>
+	</FORM>
+    </TBODY></TABLE><!-- 16 -->
+  </TD></TR>
+  <TR><TD style="background-color: #330000;">
+<!-- 17 -->
+    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY>
+      <TR><TD>
+<!-- 18 -->
+        <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0><TBODY>
+          <TR>
+            <TD style="BACKGROUND-COLOR: #ffffff"; "VARTICAL-ALIGN: top;">
+(1)履修申請は[登録科目一覧]（この画面）を中心に4つの画面で構成されます。登録科目一覧では現在の科目の状態を常に確認してください。<br>
+(2)履修希望科目は<FONT class=bluechar>[科目検索]</FONT>ボタンにより科目検索画面で検索のうえ選択します。検索～選択の作業が終了したら登録科目一覧に戻り<FONT class=bluechar>[科目申請]</FONT>ボタンで申請を確定してください。<br>
+(3)一部の科目は登録の取り消しが可能です。取消可能科目は<FONT class=bluechar>[科目取消]</FONT>ボタンで確認できます。<br>
+(4)一部の科目は科目区分の変更が可能です。変更可能科目は<FONT class=bluechar>[発表後算入変更]</FONT>ボタンで確認できます。<br>
+(5)<FONT class=bluechar>[閉じる]</FONT>ボタンで作業を終了する前に<FONT class=bluechar>[印刷]</FONT>ボタンでこの画面を印刷して保管してください。
+            </TD>
+            <TD style="BACKGROUND-COLOR: #ffffff"; "TEXT-ALIGN: center"; "VARTICAL-ALIGN: top" width=18>
+				<INPUT class="buttonbig" type="button" value="　印　刷　"  onClick="window.print()">
+            </TD>
+          </TR>
+        </TBODY></TABLE><!-- 18 -->
+      </TD></TR>
+    </TBODY></TABLE><!-- 17 -->
+  </TD></TR>
+<FORM METHOD="POST" ACTION="/kyomu/epb1110.htm" onSubmit="return check()">
+<INPUT TYPE="HIDDEN" NAME="HID_P3"VALUE="">
+<INPUT TYPE="HIDDEN" NAME="PHPSESSID"VALUE="u43u7k2cuuc5va2abff6ttjsg2">
+<INPUT TYPE="HIDDEN" NAME="hidden_counter" VALUE="1">
+  <TR><TD>
+<!-- 19 -->
+	<script language="javascript">
+<!--
+function sublink(url, width, height){
+	if (width == "" || height == "") {
+		width = "0";
+		heitht = "0";
+	}
+	window.open(url, "subwindow", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width="+width+",height="+height);
+}
+//-->
+</script>
+    <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0><TBODY>
+      <TR>
+        <TD class=operationboxt width="20%">
+			■所属学部Web申請期間
+		</TD>
+        <TD class="operationboxf" width="60%" align="right"></TD>
+        <TD class="operationboxf" width="20%" rowspan=2 align="right" valign="bottom">
+									<INPUT class="buttonbig" type="button" value="申請期間詳細情報"  onClick="sublink('http://www.waseda.jp/mnc/kamoku/index.html', '640', '480')">
+					        </TD>
+      </TR>
+      <TR>
+        <TD class=operationboxt>
+			&nbsp;&nbsp;		</TD>
+        <TD class=operationboxf>
+			<!-- 20071127 2007年度改修案件[25]-[27]対応 -->
+<!--					現在、<FONT class=redchar>所属学部</FONT>では申請を受け付けていません。くわしくは<FONT class=bluechar>[申請期間詳細情報]</FONT>で確認してください。-->
+						申請期間は右の<FONT class=bluechar>[申請期間詳細情報]</FONT>で確認してください。
+<!-- 20071127 2007年度改修案件[25]-[27]対応 ここまで -->
+					        </TD>
+      </TR>
+    </TBODY></TABLE><!-- 19 -->
+<!-- 表示 -->
+<!-- 23 -->
+    <TABLE style="BACKGROUND-COLOR: #ffffff" cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY>
+      <TR><TD>
+<!-- 24 -->
+          <TABLE style="BACKGROUND-COLOR: #ffffff" cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY>
+            <TR>
+              <TD style="BACKGROUND-COLOR: #ffffff"; "TEXT-ALIGN: center"; width=18>
+				<INPUT class="buttonbig" TYPE="SUBMIT" name="kamokukensaku" VALUE="科目検索">
+                </TD >
+              <TD class=redchar>
+	              </TD>
+            </TR>
+			<TR><TD>&nbsp;</TD><TR>
+            <TR>
+              <TD style="BACKGROUND-COLOR: #ffffff"; "TEXT-ALIGN: center"; width=18>
+				<INPUT class="buttonbig" TYPE="SUBMIT" name="kamokushinsei" VALUE="科目申請">
+              </TD >
+              <TD class=redchar>
+	              </TD>
+            </TR>
+			<TR><TD>&nbsp;</TD><TR>
+            <TR>
+              <TD style="BACKGROUND-COLOR: #ffffff"; "TEXT-ALIGN: center"; "VARTICAL-ALIGN: top" width=18>
+                <INPUT class="buttonbig" type="submit" name="kamokutorikeshi" value="科目取消">
+              </TD>
+              <TD class=redchar>
+	              </TD>
+             </TR>
+			<TR><TD>&nbsp;</TD><TR>
+            <TR>
+              <TD style="BACKGROUND-COLOR: #ffffff"; "TEXT-ALIGN: center"; width=18>
+				<INPUT class="buttonbig" TYPE="SUBMIT" name="kamokuhenkou" VALUE="発表後算入変更">
+                </TD >
+              <TD class=redchar>
+	
+              </TD>
+            </TR>
+
+			</TBODY>
+           </TABLE><!-- 24 -->
+<!-- 2014年度改修 25-421 2014-08 全科目エラー時にメッセージ表示追加-->
+	<!-- 25 -->
+           <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0></TBODY>
+                <TD class=operationboxt style="TEXT-ALIGN: center" width="10%">■登録科目一覧</TD>
+                <TD class=dummycell width="60%">
+<!-- 20071127 2007年度改修案件[25]-[27]対応 -->
+<!-- 備考に「￥」マークのある科目は聴講料等の支払対象、［要確認］ボタンがあるものは関連情報の確認及び、追加で申請が必要な情報の登録が出来ます。
+     科目名はクリックするとシラバス情報が表示されます。-->
+備考に「￥」マークのある科目は聴講料等の支払対象、
+［関連URL］ボタンは関連するWebサイトへのリンク、
+［入力有］ボタンは追加で登録する情報の申請画面へのリンクを表しています。
+科目名はクリックするとシラバス情報が表示されます。
+<!-- 20071127 2007年度改修案件[25]-[27]対応 ここまで -->
+</TD>
+                <TD class=operationboxt style="TEXT-ALIGN: center" width="10%">登録算入単位数</TD>
+                <TD class=operationboxf style="TEXT-ALIGN: center" width="2%" >15</TD>
+                <TD class=operationboxt style="TEXT-ALIGN: center" width="4%">通年</TD>
+                <TD class=operationboxf style="TEXT-ALIGN: center" width="2%" >0</TD>
+                <!--2013/01 CRS UPD 29-003 START-->
+                <!--<TD class=operationboxt style="TEXT-ALIGN: center" width="4%">前期</TD>-->
+                <TD class=operationboxt style="TEXT-ALIGN: center" width="4%">春学期</TD>
+                <!--2013/01 CRS UPD 29-003 END-->
+                <TD class=operationboxf style="TEXT-ALIGN: center" width="2%">15</TD>
+                <!--2013/01 CRS UPD 29-003 START-->
+                <!--<TD class=operationboxt style="TEXT-ALIGN: center" width="4%">後期</TD>-->
+                <TD class=operationboxt style="TEXT-ALIGN: center" width="4%">秋学期</TD>
+                <!--2013/01 CRS UPD 29-003 END-->
+                <TD class=operationboxf style="TEXT-ALIGN: center" width="2%">0</TD>
+            </TBODY></TABLE>
+<!-- 25 -->
+           <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0><TBODY>
+						<tr>
+			<td class="operationboxt" width="5%" style="text-align:center">学期</td>
+			<td class="operationboxt" width="5%" style="text-align:center">曜日</td>
+			<td class="operationboxt" width="3%" style="text-align:center">時限</td>
+			<td class="operationboxt" width="6%" style="text-align:center">開講学部</td>
+			<td class="operationboxt" width="9%" style="text-align:center">備考</td>
+			<td class="operationboxt" width="18%" style="text-align:center">科目名</td>
+			<td class="operationboxt" width="10%" style="text-align:center">担当教員</td>
+			<td class="operationboxt" width="10%" style="text-align:center">キャンパス</td>
+			<td class="operationboxt" width="10%" style="text-align:center">教室名</td>
+			<td class="operationboxt" width="10%" style="text-align:center">科目区分</td>
+			<td class="operationboxt" width="4%" style="text-align:center">単位</td>
+			<td class="operationboxt" width="10%" style="text-align:center">状態/希望順位</td>
+		</tr>
+				<tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">月</td>
+	 
+		<td class="decisionboxf" style="text-align:center">２</td>
+	 
+		<td class="decisionboxf">日本語</td>
+			<td class="decisionboxf">
+			￥(要聴講料等)<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9204C480010120189204C4800192&pLng=JP&pType=201797171124" target="_blank">日本の良さを知る：「伝統文化を学ぼう！」知識編４－８　（留学生対象日本語科目）</a></td>
+			<td class="decisionboxf">森下　雅子</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">２２－２０１</td>
+								<td class="decisionboxf">日本語</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">月</td>
+	 
+		<td class="decisionboxf" style="text-align:center">３</td>
+	 
+		<td class="decisionboxf">日本語</td>
+			<td class="decisionboxf">
+			￥(要聴講料等)<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9204B550020120189204B5500292&pLng=JP&pType=201797171124" target="_blank">ロールプレイによる話し方５　（留学生対象日本語科目）</a></td>
+			<td class="decisionboxf">中込　明子</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">２２－５０８</td>
+								<td class="decisionboxf">日本語</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">月</td>
+	 
+		<td class="decisionboxf" style="text-align:center">４</td>
+	 
+		<td class="decisionboxf">日本語</td>
+			<td class="decisionboxf">
+			￥(要聴講料等)<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9204B560030120189204B5600392&pLng=JP&pType=201797171124" target="_blank">会話から発表へ５－６　（留学生対象日本語科目）</a></td>
+			<td class="decisionboxf">中込　明子</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">２２－５０８</td>
+								<td class="decisionboxf">日本語</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">月</td>
+	 
+		<td class="decisionboxf" style="text-align:center">５</td>
+	 
+		<td class="decisionboxf">日本語</td>
+			<td class="decisionboxf">
+			￥(要聴講料等)<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9204055007012018920405500792&pLng=JP&pType=201797171124" target="_blank">ニュースや解説を見て内容を書く５　（留学生対象日本語科目）</a></td>
+			<td class="decisionboxf">中沢　佐企子</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">２２－２０８</td>
+								<td class="decisionboxf">日本語</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">火</td>
+	 
+		<td class="decisionboxf" style="text-align:center">２</td>
+	 
+		<td class="decisionboxf">国際教養</td>
+			<td class="decisionboxf">
+			<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=210CU32100012018210CU3210021&pLng=JP&pType=201797171124" target="_blank">Programming for Social and Cultural Data Analysis 01</a></td>
+			<td class="decisionboxf">シャルロート　ヨアヒム</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">２２－２０１</td>
+								<td class="decisionboxf">講義・中上級科目</td>
+							<td class="decisionboxf" style="text-align:center">2</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">水<br>水</td>
+	 
+		<td class="decisionboxf" style="text-align:center">１<br>２</td>
+	 
+		<td class="decisionboxf">国際教養</td>
+			<td class="decisionboxf">
+			<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=210MI41400012018210MI4140021&pLng=JP&pType=201797171124" target="_blank">Advanced Computer Programming　01</a></td>
+			<td class="decisionboxf">トロヴァト　ガブリエレ</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">１１－６１０（第４マルチメディア教室）<br>１１－６１０（第４マルチメディア教室）</td>
+								<td class="decisionboxf">講義・中上級科目</td>
+							<td class="decisionboxf" style="text-align:center">4</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">水</td>
+	 
+		<td class="decisionboxf" style="text-align:center">５</td>
+	 
+		<td class="decisionboxf">日本語</td>
+			<td class="decisionboxf">
+			￥(要聴講料等)<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9204045007012018920404500792&pLng=JP&pType=201797171124" target="_blank">商品開発企画プロジェクト４－５　（留学生対象日本語科目）</a></td>
+			<td class="decisionboxf">今井　なをみ</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">１４－６０３（教育実験室）</td>
+								<td class="decisionboxf">日本語</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">木</td>
+	 
+		<td class="decisionboxf" style="text-align:center">２</td>
+	 
+		<td class="decisionboxf">グローバル</td>
+			<td class="decisionboxf">
+			<BR>			<input type="button" value="関連URL" onclick="Javascript:window.open('http://www.waseda.jp/inst/gec/undergraduate/registration/#anc_14','_blank')"><BR>		</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9S070400400220189S070400409S&pLng=JP&pType=201797171124" target="_blank">フットサル　基礎　０２</a></td>
+			<td class="decisionboxf">須田　芳正</td>
+			<td class="decisionboxf">喜久井町</td>
+			<td class="decisionboxf">喜久井町グラウンド</td>
+								<td class="decisionboxf">講義・他学部科目・体育</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">木</td>
+	 
+		<td class="decisionboxf" style="text-align:center">３</td>
+	 
+		<td class="decisionboxf">日本語</td>
+			<td class="decisionboxf">
+			￥(要聴講料等)<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=9204058003012018920405800392&pLng=JP&pType=201797171124" target="_blank">社会人基礎力をつける５－８　（留学生対象日本語科目）</a></td>
+			<td class="decisionboxf">木下　直子</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">１４－６１４</td>
+								<td class="decisionboxf">日本語</td>
+							<td class="decisionboxf" style="text-align:center">1</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr><tr>			<td class="decisionboxf" style="text-align:center">春学期          </td>
+			<td class="decisionboxf" style="text-align:center">木</td>
+	 
+		<td class="decisionboxf" style="text-align:center">４</td>
+	 
+		<td class="decisionboxf">国際教養</td>
+			<td class="decisionboxf">
+			<BR>					</td>
+					<td class="decisionboxf"><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?&pKey=210MI40100012018210MI4010021&pLng=JP&pType=201797171124" target="_blank">Computerized Society　01</a></td>
+			<td class="decisionboxf">トロヴァト　ガブリエレ</td>
+			<td class="decisionboxf">早稲田</td>
+			<td class="decisionboxf">１１－５０３</td>
+								<td class="decisionboxf">講義・中上級科目</td>
+							<td class="decisionboxf" style="text-align:center">2</td>
+			<td class="decisionboxf" colspan = 2>
+										決定  <br>
+											</td>
+</tr>            </TBODY></TABLE><!-- 25 -->
+          </TD></TR>
+      </TBODY></TABLE><!-- 23 -->
+    </TD></TR>
+</FORM>
+</TBODY></TABLE><!-- 15 -->
+</TD></TR></TBODY></TABLE><!-- 5 -->
+<table class="subcolor" style="text-align:center;width:100%;" cellspacing="0" cellpadding="0" border="0" summary="copyright">
+	<tbody>
+		<tr>
+			<td><hr style="width:80%;"></td>
+		</tr>
+		<tr>
+			<td>Copyright (C) Waseda University 2002-2018. All rights reserved.</td>
+		</tr>
+		<tr>
+			<td style="height:30px;vertical-align:top;"><a href="http://www.waseda.jp/inst/ches/guideline/guideline/" target="_blank">著作権・使用許諾条件</a> / <a href="http://www.waseda.jp/top/privacy-policy" target="_blank">個人情報保護</a> / <a href="http://www.waseda.jp/wits/data/CHARACTER/index.html" target="_blank">使用不可文字について</a> ()</td>
+		</tr>
+	</tbody>
+</table>
+</BODY></HTML>
